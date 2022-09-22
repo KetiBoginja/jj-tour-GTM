@@ -1,8 +1,28 @@
-footer {
-    background-color: black;
-    margin-top: 70px;
-}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
 .btn {
     margin-top: 10px;
 }
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+footer{
+    margin-top: 20px;
+    background:rgb(25,74,255);
+    background: linear-gradient(156deg, rgba(25,74,255,1) 0%, rgba(255,224,0,1) 22%, rgba(255,20,34,1) 47%, rgba(254,255,255,1) 73%, rgba(26,176,0,1) 100%);
+}
+a {text-decoration: none; background-color: none; color:black}
+a:hover {
+    font-weight: bold;
+    color:black;
+  }
+h2{
+    text-align: center;
+  }
+.navbar {
+    background-color: #ffe668 !important;
+    margin-bottom: 10px;
+    padding-left: 60px;
+  }
+  /* .carousel {
+    height: 70%;
+    width: 70%;
+  } */
