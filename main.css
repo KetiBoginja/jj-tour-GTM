@@ -37,14 +37,14 @@ body { font-family: sans-serif; }
   background: #EEE;
 }
 
-/* .carousel-cell {
+.carousel-cell {
   width: 66%;
   height: 200px;
   margin-right: 10px;
   background: #8C8;
   border-radius: 5px;
   counter-increment: carousel-cell;
-} */
+} 
 
 /* cell number */
 .carousel-cell:before {
