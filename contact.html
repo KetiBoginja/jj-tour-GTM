@@ -61,7 +61,23 @@
 <div class="row">
 <div class="col-sm-6">
     <form action=”https://formsubmit.co/katya_bg@hotmail.com” method=”POST” enctype=”text/plain” name=”EmailForm”> 
-        <div class="form-group">
+      <div class="form-group">
+        <div class="form-row">
+          <div class="col">
+            <input type="text" name="name" class="form-control" placeholder="Name" required>
+          </div>
+        <br>
+          <div class="col">
+            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+          </div>
+          <br>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-lg btn-dark btn-block">Send</button>
+      <!-- <div class="form-group">
             <label for="UserName">Name*</label>
             <input class="form-control" type="text" name="UserName" id="UserName" required>
         </div>
@@ -73,7 +89,7 @@
             <label class="UserMsg">Your question*</label>
             <textarea class="form-control" type="text" name="Usermsg" id="Usermsg" required></textarea>
         </div>
-        <input class="btn btn-outline-primary" type="submit" value="submit">
+        <input class="btn btn-outline-primary" type="submit" value="submit"> -->
     </form>
 </div>
 <div class="col-sm-6">
