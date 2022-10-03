@@ -14,9 +14,7 @@ a:hover {
     font-weight: bold;
     color:black;
   }
-h2, h3{
-    text-align: center;
-  }
+
 .navbar {
     background-color: #ffe668 !important;
     margin-bottom: 10px;
@@ -56,3 +54,10 @@ body { font-family: sans-serif; }
   font-size: 80px;
   color: white;
 } */
+.contact{
+  color:blue;
+}
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
