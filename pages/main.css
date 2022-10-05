@@ -61,3 +61,10 @@ h2 {
   font-size: 30px;
   font-weight: bold;
 }
+
+h6 {
+  font-style: italic;
+}
+h3 {
+  font-style: bold;
+}
