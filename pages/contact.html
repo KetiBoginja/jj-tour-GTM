@@ -26,7 +26,10 @@
 
   //////////////////////////////////////////////////
       function trackSubmit() { 
-          gtag('event', 'question submited');
+          gtag('event', 'question submited', {
+            'event_category': 'form submited',
+            'event_label' : 'contact page form'
+          });
           alert('Form submited');
       }
   //////////////////////////////////////////////////
