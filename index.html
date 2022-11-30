@@ -32,13 +32,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item-hp-ex" onclick="return trackExcursion('hp','excursion')">
+          <li class="nav-item-hp-ex" onclick="return trackExcursion('nav','click', 'excursion')">
             <a class="nav-link" href="pages/excursion.html">Excursion</a>
           </li>
-          <li class="nav-item" onclick="return trackExcursion('hp','about')">
+          <li class="nav-item" onclick="return trackExcursion('nav', 'click', 'about')">
             <a class="nav-link" href="pages/about.html">About</a>
           </li>
-          <li class="nav-item" onclick="return trackExcursion('hp','contact')">
+          <li class="nav-item" onclick="return trackExcursion('nav','click', 'contact')">
             <a class="nav-link" href="pages/contact.html">Contact</a>
           </li>
         </ul>
@@ -111,11 +111,13 @@
 
 
     //////////////////////////////////////////////////
-    function trackExcursion(event_category, event_label) {
+    function trackExcursion(event_category, event_label, event_action) {
           var event_params = {
             'event_category': event_category,
-            'event_label' : event_label} 
-          gtag('event', 'excursion click', event_params);
+            'event_action' : event_action
+            'event_label' : event_label
+            } 
+          gtag('event', 'nav_click', event_params);
           console.log(event_params);
          //return false;
       }
