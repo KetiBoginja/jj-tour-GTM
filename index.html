@@ -32,13 +32,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item-hp-ex" onclick="hp_ex()">
+          <li class="nav-item-hp-ex" onclick="return trackExcursion('hp','excursion')">
             <a class="nav-link" href="pages/excursion.html">Excursion</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" onclick="return trackExcursion('hp','about')">
             <a class="nav-link" href="pages/about.html">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" onclick="return trackExcursion('hp','contact')">
             <a class="nav-link" href="pages/contact.html">Contact</a>
           </li>
         </ul>
@@ -111,13 +111,14 @@
 
 
     //////////////////////////////////////////////////
-        function hp_ex() { 
-            gtag('event', 'hp-ex', {
-              'event_category': 'hp-ex-clicked',
-              'event_label' : 'hp-ex-clicked'
-            })
-            alert('ex clicked');
-        }
+    function trackExcursion(event_category, event_label) {
+          var event_params = {
+            'event_category': event_category,
+            'event_label' : event_label} 
+          gtag('event', 'excursion click', event_params);
+          console.log(event_params);
+         // return false;
+      }
     //////////////////////////////////////////////////
     
     </script>
