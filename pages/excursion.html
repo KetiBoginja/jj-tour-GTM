@@ -24,12 +24,13 @@
 
 
   //////////////////////////////////////////////////
-      function trackExcursion() { 
-          gtag('event', 'excursion click', {
-            'event_category': 'excursion click',
-            'event_label' : 'excursion page'
-          });
-          alert('excursion clicked');
+      function trackExcursion(event_category, event_label) {
+          var event_params = {
+            'event_category': event_category,
+            'event_label' : event_label} 
+          gtag('event', 'excursion click', event_params);
+          console.log(event_params);
+          return false;
       }
   //////////////////////////////////////////////////
   
@@ -75,7 +76,7 @@
     <h2>Excursions</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
-        <div class="card" onclick=trackExcursion()>
+        <div class="card" onclick="return trackExcursion('truc','bla');">
           <a href="../pages/glasskayak.html"><img src="../img/glasskayak/gk1.jpg" class="card-img-top" alt="..."
               loading="lazy"></a>
           <div class="card-body">
