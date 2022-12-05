@@ -32,3 +32,14 @@ function form(event_category, event_label) {
     console.log(event_params);
    //return false;
 }
+
+// contact us
+function contact_us(event_category, event_label) {
+    var event_params = {
+      'event_category': event_category,
+      'event_label' : event_label,
+      } 
+    gtag('event', 'contact_us_clicked', event_params);
+    console.log(event_params);
+   //return false;
+}
