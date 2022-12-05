@@ -12,7 +12,7 @@ function navigation(event_category, event_label) {
 //////////////////////////////////////////////////
 
 // homepage social
-function soc(event_category, event_label) {
+function social_media(event_category, event_label) {
     var event_params = {
       'event_category': event_category,
       'event_label' : event_label,
@@ -22,4 +22,13 @@ function soc(event_category, event_label) {
    //return false;
 }
 
-
+// contact form
+function form(event_category, event_label) {
+    var event_params = {
+      'event_category': event_category,
+      'event_label' : event_label,
+      } 
+    gtag('event', 'form_submmited', event_params);
+    console.log(event_params);
+   //return false;
+}
